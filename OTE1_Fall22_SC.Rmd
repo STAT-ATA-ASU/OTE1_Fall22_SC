@@ -1,0 +1,141 @@
+---
+title: "Opportunity To Excel (OTE) I"
+author: "Your Name Here"
+date: 'Last compiled: `r format(Sys.time(), "%B %d, %Y at %X")`'
+output: bookdown::html_document2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, warning = FALSE, message = FALSE, fig.align = "center")
+library(scales)
+```
+
+__________
+
+**Note: By committing and pushing this OTE to the class repository you are acknowledging the all work is your own except as noted in your acknowledgement statement at the end of the document.  Please commit and push your work to the class repository no later than 24 hours after you accept the assignment or by 2:00 pm, Thursday October 13, 2022, if you accept the assignment sometime after 2:00 pm Wednesday October 12, 2022.  Do not alter the date field in the YAML.**
+
+____________
+
+
+1. Load the `tidyverse` and `fst` packages. 
+
+```{r}
+# Your Code Here
+
+```
+
+_______
+
+2. Read into R the data set `late_shipments.fst` stored in the `data` directory using the `read.fst()` function and store the results in `late_shipments`.  You may need to read the help file for `read.fst()` as we have not discussed this function or how to read `*.fst` files in class.
+
+```{r}
+# Your Code Here
+
+```
+
+__________
+
+3. Create a subset of `late_shipments` named `late_shipments_air` where the `shipment_mode` is `"Air"` and the `country` is `"Vietnam"`.  The dimensions of `late_shipments_air` should be 135 by 26.  Use `late_shipments_air` for all subsequent questions.
+
+```{r}
+# Your Code Here
+
+```
+
+__________
+
+4. Create a scatterplot of `freight_cost_usd` versus `weight_kilograms` mapping `sub_classification` to `color` using the `late_shipments_air` data frame.  Superimpose least squares regression lines on the scatterplot.  Make the `Adult` points and least squares regression line `lightblue` and the `Pediatric` points and least squares regression line `pink`.  Replace the computer variables with appropriate labels.
+
+```{r, label = "q4", fig.cap = "Scatterplot of freight cost in US dollars versus weight (kg)"}
+# Your Code Here
+
+```
+
+___________
+
+5.  Based on scatterplot created in Figure \@ref(fig:q4), do you think it is appropriate to use a parallel slopes model or a non-additive (interaction) model?  Please explain your rationale.  Characterize the relationships in Figure \@ref(fig:q4).
+
+**Your answer here**
+
+_____________
+
+6. Create histograms of `freight_cost_usd` by `sub_classification` such that the histogram for `Adult` is displayed on top of the histogram for `Pediatric`. Set the `binwidth` to 500 and use your favorite color for the `fill` argument. (Hint: `facet_grid()`)
+
+```{r, label = "q6", fig.cap = "Histograms of freight cost in US dollars"}
+# Your Code Here
+
+```
+
+___________
+
+7.  Characterize the distribution of `freight_cost_usd` for `Adult`.  Format all answers with appropriate units and use inline R code to report all numeric answers.
+
+
+```{r}
+# Your Code Here
+
+```
+
+**Your answer here.**
+
+_______________
+
+8.  Create a parallel slopes model for regressing `freight_cost_usd` on to `weight_kilograms` for the different levels in `sub_classification`.  Store the result in `mod_ps`.  Report and interpret the slope of the model.  What is the model's $y$-intercept for `Pediatric` shipments?  
+
+```{r}
+# Your Code Here
+
+```
+
+**Your answer here.**
+
+_________
+
+9.  Given that 8% of all shipments from Vietnam are late, what is the probability at least 90% of the next $n = 500$ shipments will be on time?  
+  *  Define your random variable.
+  *  Specify the distribution of the random variable.
+  *  Write a mathematical statement using the above defined random variable to answer the question and report the answer.
+  * What is expected value and standard deviation of your random variable?
+
+**Your answers here:**
+
+  * 
+  *
+  *
+  *
+
+```{r}
+# Your Code Here
+
+```
+
+____________
+
+10. A gambler has in his pocket a fair coin and a two-headed coin.  He selects one of the coins at random; when he flips it, it shows heads.  What is the probability it is the fair coin?  Write out all work with numeric values used to obtain your answer.  Note: the correct answer will not receive credit without showing appropriate work.
+
+* Let $FC$ = 
+* Let $H$ = 
+
+
+
+_________
+
+11. A coin is tossed 25 times.  Let $X=$ the number of tosses that result in heads $(H)$.  Consider the following rule for deciding whether or not the coin is fair.  Judge the coin to be fair if $8\leq X \leq 17$.  Judge the coin to be biased if either $X \leq 7$ or $X \geq 18$.
+
+* What is the distribution of $X$?  **Your answer here.**
+
+* What is the probability of judging the coin to be biased when it is actually fair? **Your answer here.**
+
+```{r}
+# Your Code Here
+
+```
+
+
+
+
+_____________
+
+**Acknowledgement Statement:  All work on this OTE is entirely my own.**
+
+____________
