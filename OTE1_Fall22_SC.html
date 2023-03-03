@@ -286,8 +286,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -295,16 +295,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -351,13 +344,13 @@ pre code {
 
 <h1 class="title toc-ignore">Opportunity To Excel (OTE) I</h1>
 <h4 class="author">Your Name Here</h4>
-<h4 class="date">Last compiled: October 07, 2022 at 08:37:25 AM</h4>
+<h4 class="date">Last compiled: March 03, 2023 at 01:39:08 PM</h4>
 
 </div>
 
 
 <hr />
-<p><strong>Note: By committing and pushing this OTE to the class repository you are acknowledging the all work is your own except as noted in your acknowledgement statement at the end of the document. Please commit and push your work to the class repository no later than 24 hours after you accept the assignment or by 2:00 pm, Thursday October 13, 2022, if you accept the assignment sometime after 2:00 pm Wednesday October 12, 2022. Do not alter the date field in the YAML.</strong></p>
+<p><strong>Note: By committing and pushing this OTE to the class repository you are acknowledging the all work is your own except as noted in your acknowledgement statement at the end of the document. Please commit and push your work to the class repository no later than 24 hours after you accept the assignment or by 1:00 pm, Thursday March 9, 2023, if you accept the assignment sometime after 1:00 pm Wednesday March 8, 2023. Do not alter the date field in the YAML.</strong></p>
 <hr />
 <ol style="list-style-type: decimal">
 <li>Load the <code>tidyverse</code> and <code>fst</code> packages.</li>

@@ -12,7 +12,7 @@ library(scales)
 
 __________
 
-**Note: By committing and pushing this OTE to the class repository you are acknowledging the all work is your own except as noted in your acknowledgement statement at the end of the document.  Please commit and push your work to the class repository no later than 24 hours after you accept the assignment or by 2:00 pm, Thursday October 13, 2022, if you accept the assignment sometime after 2:00 pm Wednesday October 12, 2022.  Do not alter the date field in the YAML.**
+**Note: By committing and pushing this OTE to the class repository you are acknowledging the all work is your own except as noted in your acknowledgement statement at the end of the document.  Please commit and push your work to the class repository no later than 24 hours after you accept the assignment or by 1:00 pm, Thursday March 9, 2023, if you accept the assignment sometime after 1:00 pm Wednesday March 8, 2023.  Do not alter the date field in the YAML.**
 
 ____________
 
